@@ -1,0 +1,54 @@
+
+// about to bottom
+        .arrow{
+          color: #fff;
+          position: absolute;
+          bottom: 10px;
+          left: 60px;
+          text-align: center;
+          padding: 12px 12px 3px 12px;
+          cursor: pointer;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          left: 49%;
+          z-index: 11;
+          i{
+          color:#fff;
+          -ms-transform: rotate(90deg); /* IE 9 */
+          -webkit-transform: rotate(90deg); /* Safari 3-8 */
+          transform: rotate(90deg);
+          }
+              }
+
+// about dean Policies
+        .Policies{
+        background:$mainColor;
+        background: url(../images/policy-bg.svg) no-repeat -28% 85% $mainColor;
+        margin: 8px 16px;
+        text-align: $alignleft;
+        color: #fff;
+        padding: 10px;
+        font: $secondFont;
+        font-weight: 700;
+
+        img{
+        width: 50px;
+        margin-bottom: 5px;
+        display: block;
+
+        &:hover{
+        animation: grow-from-left 800ms ease-in-out 5;
+        }
+        }
+        }
+
+
+// about dean button
+        .about{
+          background: url(../images/about-bg.svg) no-repeat -7% 85% $thColor;
+          @extend .Policies;
+
+        }
+
+
+

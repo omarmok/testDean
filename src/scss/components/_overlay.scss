@@ -1,0 +1,12 @@
+.overlay{
+  @include overlaymix ;
+  background: url(../images/dinMainBG.png)   no-repeat center center ;
+  opacity: .1;
+  z-index: 4;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+

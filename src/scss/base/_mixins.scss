@@ -1,0 +1,72 @@
+
+//overlay
+@mixin overlaymix{
+height: 100vh ;
+width: 100%;
+top: 0;
+position: absolute;
+}
+//prefix
+@mixin prefix ( $prop , $value, $prefixs: ()){
+
+@each $prefix in $prefixs{
+#{ '-' + $prefix + '-' + $prop}: $value;
+}
+#{$prop}: $value;
+
+}
+
+//animation prefix
+
+@mixin keyfanimation($anName ) {
+
+@-webkit-keyframes #{$anName}{
+@content;
+
+}
+@-moz-keyframes #{$anName}{
+@content;
+
+}
+@-ms-keyframes #{$anName}{
+@content;
+
+}
+@-o-keyframes #{$anName}{
+@content;
+
+}
+
+@keyframes #{$anName}{
+@content;
+
+}
+
+
+}
+// background-gradient
+@mixin background-gradient($start-color,  $center-color, $end-color, $orientation) { 
+background: $start-color;
+
+@if $orientation == 'vertical' {
+background: -webkit-linear-gradient(top, $start-color,  $center-color,$end-color);
+background: linear-gradient(to bottom, $start-color,  $center-color,$end-color);
+} @else if $orientation == 'horizontal' {
+background: -webkit-linear-gradient(left, $start-color,  $center-color,$end-color);
+background: linear-gradient(to right, $start-color,  $center-color,$end-color);
+} @else {
+background: -webkit-radial-gradient(center, ellipse cover, $start-color,  $center-color,$end-color);
+background: radial-gradient(ellipse at center, $start-color,  $center-color, $end-color);
+}
+}
+
+
+// transition
+@mixin transition($args...) {
+-webkit-transition: $args;
+-moz-transition: $args;
+-ms-transition: $args;
+-o-transition: $args;
+transition: $args;
+}
+

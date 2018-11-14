@@ -1,0 +1,36 @@
+        /* HidePlaceholder */
+        :focus {
+        outline: none;
+        }
+
+        ::-webkit-input-placeholder {
+        @include prefix ( transition, opacity 0.35s ease-in-out , webkit  moz o ms  );
+        }
+        :focus::-webkit-input-placeholder {
+         opacity:0;
+
+
+        @extend   ::-webkit-input-placeholder;
+        }
+        ::-moz-placeholder {
+        @extend   ::-webkit-input-placeholder;
+        }
+        :focus::-moz-placeholder {
+           opacity:0;
+        @extend   ::-webkit-input-placeholder;
+        }
+        :-ms-input-placeholder {
+        @extend   ::-webkit-input-placeholder;
+        }
+        :focus:-ms-input-placeholder {
+            opacity:0;
+        @extend   ::-webkit-input-placeholder;
+        }
+        :-moz-placeholder {
+        @extend   ::-webkit-input-placeholder;
+        }
+        :focus:-moz-placeholder {
+          opacity:0;
+        @extend   ::-webkit-input-placeholder;
+        }
+

@@ -1,0 +1,95 @@
+// start openmenu
+.opmen {
+  color: $mainColor !important;
+  font: $largeFont;
+    vertical-align: middle;
+}
+        .menubarclass {
+          height: 0%;
+          width: 100%;
+          position: fixed;
+          z-index:20;
+          top: 0;
+          left: 0;
+          background: rgba(14, 42, 71, 0.99);
+                   overflow-y: hidden;
+          transition: 0.5s;
+
+          .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font:$xlFont;
+            background:$mainColor;
+            font: $largeFont;
+            padding: 9px 10px 3px;
+          }
+
+        .menubarclass-content {
+          position: relative;
+          top: 10%;
+          width: 20%;
+          text-align: right;
+          margin-top: 30px;
+          margin: 0 auto;
+
+          h2{
+            color: $mainColor;
+          }
+
+          li {
+            padding: 8px;
+            text-decoration: none;
+            font: $largeFont;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+            cursor: pointer;
+            border-bottom: 1px solid #023355;
+            &:hover, &:focus {
+              color: $mainColor;
+              padding-right: 10px;
+              border-bottom: 1px solid $mainColor;
+            }
+            &:before {
+              // content: "\2190";
+              content: "\f053";
+              font-family: FontAwesome;
+              font: $secondFont;
+            }
+          }
+
+        }
+
+        }
+
+
+
+        @media screen and (max-height: 450px) {
+          .menubarclass {
+
+            overflow-y: auto;
+            a {
+              font: $largeFont;
+            }
+
+
+            .closebtn {
+              font: $largeFont;
+              top: 15px;
+              right: 35px;
+              background:$mainColor;
+            }
+          }
+        }
+
+
+
+
+        @media (max-width: 1000px) {
+
+          .menubarclass-content {
+            width: 92% !important;
+          }
+
+        }

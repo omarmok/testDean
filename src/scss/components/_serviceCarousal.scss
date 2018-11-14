@@ -1,0 +1,227 @@
+        .serviseCaro {
+        cursor: pointer;
+        color:#fff;
+        font: $largeFont;
+        z-index: 10;
+
+        .carousel-control-prev {
+        opacity: 1 !important;
+        z-index: 9999 !important;
+        width: 1%;
+        }
+        .carousel-control-next{
+        opacity:1  !important;
+        z-index: 9999 !important;
+        width: 1%;
+        }
+
+        .svgd {
+        text-align: center;
+        display: inline-block;
+        p{
+        margin: 15px 0 0 0 ;
+        }
+        }
+
+        svg {
+        width: 100px;
+        height: 100px;
+        path, line, circle {
+        fill: #fff;
+        cursor: pointer;
+        }
+        }
+
+
+        .icon-document:hover [class*='line'] {
+        // animation: bounceOutDown 750ms ease-in-out 1;
+        @include prefix ( animation, bounceOutDown 750ms ease-in-out 1 ,  moz o ms webkit );
+        fill: $mainColor;
+        }
+
+        .icon-document1:hover [class*='line'] {
+        @extend .icon-document:hover;
+        @include prefix ( animation, float 750ms ease-in-out 1 ,  moz o ms webkit )
+
+        }
+
+        .icon-document2{
+        z-index: 99999999;
+        }
+        .icon-document2:hover [class*='line'] {
+        @extend .icon-document:hover;
+        @include prefix ( animation, bounceOutDown2 750ms ease-in-out 1 ,  moz o ms webkit );
+
+        }
+
+        .icon-search:hover {
+        [class*='line'] {
+
+        @include prefix ( animation, grow-from-left 1200ms ease-in-out 1 ,  moz o ms webkit );
+        }
+        .line2 {
+        fill: $mainColor;
+        animation-delay: 200ms;
+
+        }
+        }
+
+        .icon-document:hover .line2 {
+        animation-delay: 200ms;
+        }
+
+        .icon-search:hover .line3 {
+        animation-delay: 150ms;
+        }
+
+        .icon-document:hover {
+        .line3 {
+        animation-delay: 150ms;
+        }
+        .line4 {
+        animation-delay: 500ms;
+        }
+        .line5 {
+        animation-delay: 300ms;
+        }
+        }
+
+        .icon-documen1:hover .line2 {
+        fill: $mainColor;
+        }
+
+        .icon-document2:hover {
+        .line2 {
+        animation-delay: 200ms;
+        }
+        .line3 {
+        animation-delay: 150ms;
+        }
+        .line4 {
+        animation-delay: 500ms;
+        }
+        .line5 {
+        animation-delay: 300ms;
+        }
+        }
+
+        .icon-search:hover [class*='line'] {
+
+        @include prefix ( animation, float 1200ms ease-in-out 1 ,  moz o ms webkit );
+        }
+
+
+        @include keyfanimation(float) {
+        0% {
+        transform: translateY(0%);
+        }
+
+        25% {
+        transform: translateY(-8%);
+        }
+
+        50% {
+        transform: translateY(2%);
+        }
+
+        75% {
+        transform: translateY(-6%);
+        }
+
+        100% {
+        transform: translateY(0%);
+        }
+
+        }
+
+
+        @include keyfanimation(grow-from-left){
+
+        0% {
+        transform: translateY(0%);
+        }
+
+        25% {
+        transform: translateY(-8%);
+        }
+
+        50% {
+        transform: translateY(2%);
+        }
+
+        75% {
+        transform: translateY(-6%);
+        }
+
+        100% {
+        transform: translateY(0%);
+        }
+
+        }
+
+
+        @include keyfanimation(bounceOutDown){
+        0% {
+        transform: translateX(500px) scale(0, 0);
+        opacity: 0;
+        }
+
+        5% {
+        opacity: 1;
+        }
+
+        40% {
+        transform: translateX(0) scale(1, 1);
+        }
+        }
+
+
+
+
+        @include keyfanimation(bounceOutDown2){
+        0% {
+        transform: translateX(500px) scale(1, 1);
+        opacity: 0;
+        }
+
+        5% {
+        opacity: 1;
+        }
+
+        50% {
+        transform: translateX(0) scale(1, 1);
+        }
+
+        75% {
+        transform: translateX(0) skewY(2, 1);
+        }
+        }
+        }
+
+
+
+        @media (max-width: 800px) {
+
+        .serviseCaro {
+
+        svg {
+        width: 58px;
+        height: 50px;
+        }
+
+        .carousel-control-next, .carousel-control-prev  {
+        position: relative;
+        display: inline-block;
+        width: 0;
+        // float: $floatleft;
+        }
+        .carousel-control-prev {
+        width: 20%;
+        }
+
+
+        }
+
+
+        }
+

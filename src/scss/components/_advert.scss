@@ -1,0 +1,26 @@
+ //  start ads carousal
+        .adcarobg{
+        background: #fff;
+        @include prefix ( box-shadow, -12px 12px 40px 0 hsla(0,0%,47%,.21),  moz o ms webkit );
+        .carousel-control-next{
+          position: absolute;
+          display: inline-block;
+          // float: $floatleft;
+          z-index: 15;
+          left: 0px;
+          top: 20px;
+
+             opacity:1;
+          right: 85%;
+          background: rgba(0,0,0,0.6);
+          width: 20px;
+          height: 17px;
+
+        }
+
+        .carousel-control-prev{
+        right: 90%;
+        @extend  .carousel-control-next
+        }
+        }
+

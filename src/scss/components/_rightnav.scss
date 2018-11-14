@@ -1,0 +1,17 @@
+ .right{
+          text-align: $alignright;
+          img{
+            width: 170px ;
+          }
+        }
+
+        @media (max-width: 1000px) {
+          .right
+          {
+            padding: 10px;
+            text-align: center;
+            img { width: 200px; }
+          }
+
+
+        }
