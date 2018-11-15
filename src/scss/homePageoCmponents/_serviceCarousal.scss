@@ -34,7 +34,6 @@
 
 
         .icon-document:hover [class*='line'] {
-        // animation: bounceOutDown 750ms ease-in-out 1;
         @include prefix ( animation, bounceOutDown 750ms ease-in-out 1 ,  moz o ms webkit );
         fill: $mainColor;
         }
@@ -49,7 +48,7 @@
         z-index: 99999999;
         }
         .icon-document2:hover [class*='line'] {
-           fill: $mainColor;
+        fill: $mainColor;
         @include prefix ( animation, bounceOutDown2 750ms ease-in-out 1 ,  moz o ms webkit );
 
         }
@@ -203,11 +202,10 @@
         @media (max-width: 800px) {
 
         .serviseCaro {
-
         svg {
         width: 58px;
         height: 50px;
-       
+
         }
          p{
                 font:$mainFont;

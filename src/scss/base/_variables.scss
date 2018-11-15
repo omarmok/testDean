@@ -8,8 +8,33 @@ $largeFont:20px "Tajawal-Medium", Arial, sans-serif;
 $mainFont: 16px "Tajawal-Medium", Arial, sans-serif;
 $secondFont: 14px "Tajawal-Medium", Arial, sans-serif;
 
+$direction : rtl;
+
 $alignright:right;
 $alignleft:left;
 
+
+
 $floatright:right;
 $floatleft:left;
+
+
+        @if $direction == rtl{
+
+        $floatright:right;
+        $floatleft:left;
+
+        $alignright:right;
+        $alignleft:left;
+
+
+        }@else{
+
+        $floatright:left;
+        $floatleft:right;
+
+        $alignright:left;
+        $alignleft:right;
+
+
+        }

@@ -1,4 +1,5 @@
          .left{
+           text-align: $alignleft;
             img{
               width: 100px;
              }
@@ -7,23 +8,17 @@
           span{
             background: $mainColor;
             font-weight: 800;
-            -webkit-transition-duration: 1s;
-            -moz-transition-duration: 1s;
-            transition-duration: 1s;
+            @include transition (transition-duration, 3s ease);
             font:$largeFont;
             padding: 8px 10px 3px 9px;
             &:hover{
-              background: $secondColor;
+              background: $thColor;
             }
-             
 
-          } 
+
+          }
          }
-
-
-
         @media (max-width: 400px) {
-
          .left{
            text-align: center;
          }

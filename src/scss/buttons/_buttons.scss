@@ -30,12 +30,10 @@
         padding: 10px;
         font: $secondFont;
         font-weight: 700;
-
         img{
         width: 50px;
         margin-bottom: 5px;
         display: block;
-
         &:hover{
         animation: grow-from-left 800ms ease-in-out 5;
         }
@@ -47,7 +45,6 @@
         .about{
           background: url(../images/about-bg.svg) no-repeat -7% 85% $thColor;
           @extend .Policies;
-
         }
 
 

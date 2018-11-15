@@ -12,9 +12,8 @@
           top: 0;
           left: 0;
           background: rgba(14, 42, 71, 0.99);
-                   overflow-y: hidden;
-          transition: 0.5s;
-
+          overflow-y: hidden;
+          @include transition (transition-duration, .5s ease);
           .closebtn {
             position: absolute;
             top: 20px;
@@ -51,25 +50,23 @@
               color: $mainColor;
               padding-right: 10px;
               border-bottom: 1px solid $mainColor;
-            
-       
+
+
             }
 
             a:hover {
               @include transition (transition-duration, .5s ease);
               color: $mainColor;
-            
-            
-       
+
+
+
             }
-         
+
           }
 
         }
 
         }
-
-
 
         @media screen and (max-height: 450px) {
           .menubarclass {
@@ -88,10 +85,6 @@
             }
           }
         }
-
-
-
-
         @media (max-width: 1000px) {
 
           .menubarclass-content {

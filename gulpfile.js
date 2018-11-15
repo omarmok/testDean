@@ -41,7 +41,7 @@ gulp.task("sass", function() {
 
 gulp.task("js", () => {
   gulp.src([
-    
+
       "src/js/jquery-2.2.4.min.js",
       "node_modules/jquery/dist/jquery.min.js",
       "node_modules/popper.js/dist/umd/popper.min.js",

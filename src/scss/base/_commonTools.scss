@@ -1,5 +1,4 @@
 @import 'HidePlaceholder';
-
         button:focus {
         outline: 0 auto -webkit-focus-ring-color
         }
@@ -11,37 +10,27 @@
          a:hover, a:focus{
                text-decoration: none !important;
         }
-
-       
-
         ul, ol {
         list-style: none;
         padding-right: 0
         }
-
-
         ::selection {
           background:$secondColor;
           color: white;
           text-shadow: none;
         }
-
         ::-webkit-selection{
           @extend ::selection;
         }
-
-    
    %backgroundcover {
         -webkit-background-size: cover !important;
         -moz-background-size: cover !important;
         -o-background-size: cover !important;
         background-size: cover !important;
     }
-
-
    body {
         background: #f6f6f6;
         font-family: "Tajawal-Medium", Arial, sans-serif;
         overflow-x: hidden !important;
-        direction: rtl;
+        direction: $direction;
         }

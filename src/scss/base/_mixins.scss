@@ -5,13 +5,10 @@
             width: 100%;
             top: 0;
             position: relative;
-
             @extend  %backgroundcover;
-        
             }
             //prefix
             @mixin prefix ( $prop , $value, $prefixs: ()){
-
             @each $prefix in $prefixs{
             #{ '-' + $prefix + '-' + $prop}: $value;
             }
@@ -22,7 +19,6 @@
             //animation prefix
 
             @mixin keyfanimation($anName ) {
-
             @-webkit-keyframes #{$anName}{
             @content;
 
@@ -48,7 +44,7 @@
 
             }
             // background-gradient
-            @mixin background-gradient($start-color,  $center-color, $end-color, $orientation) { 
+            @mixin background-gradient($start-color,  $center-color, $end-color, $orientation) {
             background: $start-color;
 
             @if $orientation == 'vertical' {
@@ -72,4 +68,5 @@
             -o-transition: $args;
             transition: $args;
             }
+
 
