@@ -1,0 +1,25 @@
+
+//  start navbarcontainer
+.navbar{
+
+@include prefix ( box-shadow, 0 6px 14px 0 rgba(52,69,88,0.08),  moz o ms webkit );
+background: url(../images/left-bg.png) #fff no-repeat left;
+}
+
+//  start newsAdv
+#newsAdv{
+padding: 80px 0;
+
+// start news
+.news{
+max-height: 400px;
+cursor: pointer;
+padding: 0;
+}
+
+// start news
+.ads{
+max-height: 360px;
+}
+
+}

@@ -47,16 +47,22 @@
             cursor: pointer;
             border-bottom: 1px solid #023355;
             &:hover, &:focus {
+              @include transition (transition-duration, .5s ease);
               color: $mainColor;
               padding-right: 10px;
               border-bottom: 1px solid $mainColor;
+            
+       
             }
-            &:before {
-              // content: "\2190";
-              content: "\f053";
-              font-family: FontAwesome;
-              font: $secondFont;
+
+            a:hover {
+              @include transition (transition-duration, .5s ease);
+              color: $mainColor;
+            
+            
+       
             }
+         
           }
 
         }

@@ -1,0 +1,67 @@
+
+                .headertop{
+                @include prefix ( animation, colorchange 50s ,  moz o ms webkit );
+                top:0;
+                bottom: 0;
+                right:0;
+                width:100%;
+                height: 100vh !important;
+                @include background-gradient(rgba(27,72,61,1) 0%,  rgba(22,49,81,1) 61% ,rgba(22,49,81,1) 100%,  '');
+
+
+                .overlay{
+                @include overlaymix ;
+                background: url(../images/dinMainBG.png)   no-repeat center center ;
+                position: absolute;
+                opacity: .1;
+                z-index: 4;
+
+                }
+
+
+                .headcont{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                width: 330px;
+                }
+                }
+
+                @include keyfanimation(colorchange){
+                    0%   {background: #82b569; }
+                25%  {background: #2e6474; }
+                50%  {background: rgba(27,72,61,1);
+                background: -moz-radial-gradient(center, ellipse cover, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);
+                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(27,72,61,1)), color-stop(61%, rgba(22,49,81,1)), color-stop(100%, rgba(22,49,81,1)));
+                background: -webkit-radial-gradient(center, ellipse cover, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);
+                background: -o-radial-gradient(center, ellipse cover, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);
+                background: -ms-radial-gradient(center, ellipse cover, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);
+                background: radial-gradient(ellipse at center, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);;}
+                75%  {background: #301e21; }
+                100% {background: #1a667e; }
+                }
+
+                @media (min-width: 460px){
+                .headcont{
+                height: 70vh;
+                }
+
+                }
+                @media (max-width: 600px){
+                .headcont{
+                height: 15vh;
+                img{
+                width: 200px;
+                }
+                }
+                }
+
+
+
+
+                }
+
+

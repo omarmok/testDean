@@ -40,7 +40,7 @@
         }
 
         .icon-document1:hover [class*='line'] {
-        @extend .icon-document:hover;
+           fill: $mainColor;
         @include prefix ( animation, float 750ms ease-in-out 1 ,  moz o ms webkit )
 
         }
@@ -49,7 +49,7 @@
         z-index: 99999999;
         }
         .icon-document2:hover [class*='line'] {
-        @extend .icon-document:hover;
+           fill: $mainColor;
         @include prefix ( animation, bounceOutDown2 750ms ease-in-out 1 ,  moz o ms webkit );
 
         }
@@ -106,7 +106,7 @@
         }
 
         .icon-search:hover [class*='line'] {
-
+        fill: $mainColor;
         @include prefix ( animation, float 1200ms ease-in-out 1 ,  moz o ms webkit );
         }
 
@@ -207,13 +207,18 @@
         svg {
         width: 58px;
         height: 50px;
+       
+        }
+         p{
+                font:$mainFont;
+
         }
 
         .carousel-control-next, .carousel-control-prev  {
         position: relative;
         display: inline-block;
         width: 0;
-        // float: $floatleft;
+        float: $floatleft;
         }
         .carousel-control-prev {
         width: 20%;

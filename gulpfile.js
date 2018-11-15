@@ -6,6 +6,7 @@ const gulp = require("gulp"),
   uglify = require("gulp-uglify"),
   rename = require('gulp-rename'),
   Minimize = require('gulp-minimize'),
+  stripCssComments = require('gulp-strip-css-comments'),
   // hash = require('gulp-hash'),
   // cache = require('gulp-cache'),
   // htmltidy = require('gulp-htmltidy'),
@@ -29,7 +30,7 @@ gulp.task("sass", function() {
     )
 
     .pipe(concat( 'main.css'))
- 
+    .pipe(stripCssComments())
     .pipe(autoprefixer())
     .pipe(gulp.dest("assets/css"))
     .pipe(browserSync.stream());
