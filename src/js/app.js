@@ -17,6 +17,30 @@ function closeNav() {
   document.getElementById("menubar").style.height = "0%";
 }
 
+// function checkurlretuern(){
+
+//   if (url == '') {
+//     window.location = ("https://www.w3schools.com");
+
+//    }
+
+//  }
+
+
+
+
+
+            $('a').click(function(){
+                var aattr=$(this).attr('href');
+              if (aattr == '') {
+                  $(this).attr("href", "http://omarmokhtar.com/");
+              }
+
+            });
+
+
+
+
 
 $(document).ready(function(){
 	$('.mobile-menu').click(function() {
@@ -47,6 +71,5 @@ $(document).ready(function(){
 // if(document.getElementById("status") != null){
 //   var idPost=document.getElementById("status").innerHTML;
 // }
-
 
 
