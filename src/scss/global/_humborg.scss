@@ -1,6 +1,6 @@
 // start openmenu
 .opmen {
-  color: $mainColor !important;
+  color: $goldColor !important;
   font: $largeFont;
     vertical-align: middle;
 }
@@ -11,7 +11,8 @@
           z-index:20;
           top: 0;
           left: 0;
-          background: rgba(14, 42, 71, 0.99);
+          // background: rgba(14, 42, 71, 0.99);
+          background: url(../images/humbBG.svg)  rgba(14, 42, 71, 0.99) no-repeat ;
           overflow-y: hidden;
           @include transition (transition-duration, .5s ease);
           .closebtn {
@@ -19,7 +20,7 @@
             top: 20px;
             right: 45px;
             font:$xlFont;
-            background:$mainColor;
+            background:$goldColor;
             font: $largeFont;
             padding: 9px 10px 3px;
           }
@@ -33,7 +34,7 @@
           margin: 0 auto;
 
           h2{
-            color: $mainColor;
+            color: $goldColor;
           }
 
           li {
@@ -47,16 +48,16 @@
             border-bottom: 1px solid #023355;
             &:hover, &:focus {
               @include transition (transition-duration, .5s ease);
-              color: $mainColor;
+              color: $goldColor;
               padding-right: 10px;
-              border-bottom: 1px solid $mainColor;
+              border-bottom: 1px solid $goldColor;
 
 
             }
 
             a:hover {
               @include transition (transition-duration, .5s ease);
-              color: $mainColor;
+              color: $goldColor;
 
 
 

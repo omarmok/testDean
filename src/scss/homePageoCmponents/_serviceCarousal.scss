@@ -35,11 +35,11 @@
 
         .icon-document:hover [class*='line'] {
         @include prefix ( animation, bounceOutDown 750ms ease-in-out 1 ,  moz o ms webkit );
-        fill: $mainColor;
+        fill:$goldColor;
         }
 
         .icon-document1:hover [class*='line'] {
-           fill: $mainColor;
+           fill:$goldColor;
         @include prefix ( animation, float 750ms ease-in-out 1 ,  moz o ms webkit )
 
         }
@@ -48,7 +48,7 @@
         z-index: 99999999;
         }
         .icon-document2:hover [class*='line'] {
-        fill: $mainColor;
+        fill:$goldColor;
         @include prefix ( animation, bounceOutDown2 750ms ease-in-out 1 ,  moz o ms webkit );
 
         }
@@ -59,7 +59,7 @@
         @include prefix ( animation, grow-from-left 1200ms ease-in-out 1 ,  moz o ms webkit );
         }
         .line2 {
-        fill: $mainColor;
+        fill: $goldColor;
         animation-delay: 200ms;
 
         }
@@ -86,7 +86,7 @@
         }
 
         .icon-documen1:hover .line2 {
-        fill: $mainColor;
+        fill:$goldColor;
         }
 
         .icon-document2:hover {
@@ -105,7 +105,7 @@
         }
 
         .icon-search:hover [class*='line'] {
-        fill: $mainColor;
+        fill: $goldColor;
         @include prefix ( animation, float 1200ms ease-in-out 1 ,  moz o ms webkit );
         }
 

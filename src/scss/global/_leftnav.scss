@@ -6,7 +6,7 @@
            .vLogo{  width: 66px;}
           a{color: #fff;}
           span{
-            background: $mainColor;
+            background: $goldColor;
             font-weight: 800;
             @include transition (transition-duration, 3s ease);
             font:$largeFont;
