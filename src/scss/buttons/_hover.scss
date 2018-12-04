@@ -85,3 +85,47 @@
         transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
         }
         }
+
+
+
+
+        .hvr-bounce-to-left2 {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                position: relative;
+                transition-property: color;
+                transition-duration: 0.5s;
+                &:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #bbad36;
+
+                // background: url(../images/policy-bg-H.svg) no-repeat -47% 85% #ff7200;
+
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+                transition-property: -webkit-transform;
+                transition-property: transform;
+                transition-property: transform, -webkit-transform;
+                transition-duration: 0.5s;
+                transition-timing-function: ease-out;
+                }
+                &:hover, &:focus, &:active {
+                color: white;
+                }
+                &:hover:before, &:focus:before, &:active:before {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                }
+                }
