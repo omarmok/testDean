@@ -28,17 +28,16 @@
                 }
 
                 @include keyfanimation(colorchange){
-                    0%   {background: #82b569; }
-                25%  {background: #2e6474; }
-                50%  {background: rgba(27,72,61,1);
-                background: -moz-radial-gradient(center, ellipse cover, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);
-                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(27,72,61,1)), color-stop(61%, rgba(22,49,81,1)), color-stop(100%, rgba(22,49,81,1)));
-                background: -webkit-radial-gradient(center, ellipse cover, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);
-                background: -o-radial-gradient(center, ellipse cover, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);
-                background: -ms-radial-gradient(center, ellipse cover, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);
-                background: radial-gradient(ellipse at center, rgba(27,72,61,1) 0%, rgba(22,49,81,1) 61%, rgba(22,49,81,1) 100%);;}
-                75%  {background: #301e21; }
-                100% {background: #1a667e; }
+                0%   {background: #82b569; }
+                20%  {background: #c83b1f; }
+                30%  {background: #43518f; }
+                40%  {background: #000; }
+                50%  {background: #5e575f; }
+                60%  {background: #301e21; }
+                70% {background: #1a667e; }
+                80% {background: #ceaa16; }
+                90% {background: #252f58; }
+                100% {background: #290558; }
                 }
 
                 @media (min-width: 460px){

@@ -15,7 +15,10 @@
              }
              .list-group-item:first-child{
                 border-radius: 0;
-                padding: 9px;
+                padding: 7px;
+                img{
+                  width: 27px;
+                }
 
             }
             .list-group-item{
@@ -27,6 +30,9 @@
                 }
                 &:hover{
                     background-color: rgba(255, 255, 255, 0.38);
+                }
+                a{
+                  color :#000;
                 }
             }
         }
@@ -62,11 +68,12 @@
         }
         .moreBtn{
             background:$mainColor !important;
-            color: #fff;
+            color: #fff !important;
             display: block;
 
             padding: 0;
             border-radius: 42px;
+
             i{
                 background: none;
                 font-size: 30px !important;
@@ -94,10 +101,15 @@
             margin: 5px;
             cursor: pointer;
             @include transition (transition-duration, .5s ease);
-            // img{
-            //     width: 70px;
-            //     display: block;
-            // }
+            img{
+                width: 70px;
+                display: block;
+                &:hover{
+                  animation: float 800ms ease-in-out 5;
+                  display:block;
+
+                  }
+            }
             &:hover{
                 color:#fff;
              }

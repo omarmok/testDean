@@ -106,10 +106,9 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background: #bbad36;
-
+                background: #00274d;
+                border-top: 8px solid #0a71c6;
                 // background: url(../images/policy-bg-H.svg) no-repeat -47% 85% #ff7200;
-
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
                 -webkit-transform-origin: 100% 50%;
@@ -128,4 +127,5 @@
                 transform: scaleX(1);
                 transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
                 }
+
                 }
