@@ -9,6 +9,19 @@ $('.adcarobg').carousel({
   interval: 10000
 });
 
+
+
+var scrollButton = $('.seetings');
+$(window).scroll(function () {
+    $(this).scrollTop() >= 200 ? scrollButton.show() : scrollButton.hide();
+});
+scrollButton.click(function () {
+    $('html,body').animate({
+        scrollTop: 0
+    }, 1000);
+});
+
+
 function openNav() {
   document.getElementById("menubar").style.height = "100%";
 }
