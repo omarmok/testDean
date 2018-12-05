@@ -24,3 +24,23 @@ max-height: 360px;
 }
 
 }
+
+
+
+      @media (max-width:776px) {
+        .navbar{
+          margin: 10px 0 0 0;
+        }
+        #newsAdv { padding: 10px 0; }
+        .news { padding: 20px !important;
+          margin: 0 0 5px 0 !important;
+        }
+        .carousel-indicators { display: none;}
+        .adcarobg{
+          margin: 0 0 20px 0 !important;
+        }
+        .carousel-control-next{
+          right: -77px;
+        }
+
+       }

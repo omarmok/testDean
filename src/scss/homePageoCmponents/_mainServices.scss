@@ -86,7 +86,7 @@
         // flex-direction: row;
 
         .servitems{
-            width: 45%;
+            width: 46%;
             background: #e5e8ef;
             border: 1px solid #f3f3f5;
             color: #000;
@@ -119,12 +119,15 @@
 
 @media screen and (max-width: 900px){
     #mainServices{
-
+      margin: 4px 0 0 0;
+      padding-top: 22px !important;
       .set_serve{
         -webkit-flex-direction: column;
         flex-direction: column;
         .list-group{
             width: 100%;
+            margin-bottom: 20px !important;
+            padding-left: 18px;
         }
     }
     }

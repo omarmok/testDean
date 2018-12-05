@@ -1,8 +1,10 @@
       .newsArchive {
         border: 3px solid #fff;
         position: absolute;
-        right: 78%;
+        // right: 78%;
+        text-align: center;
         z-index: 9;
+        width:130px;
         float: $floatleft;
         left: 0;
         a { color: #fff;font-weight: 600 }
@@ -60,8 +62,3 @@
          i { @extend h6 } span {img {width: 30px; }}
           }
       // end news
-      @media (max-width: 476px) {
-       .news { padding: 20px; }
-      .carousel-indicators { display: none;}
-
-      }
