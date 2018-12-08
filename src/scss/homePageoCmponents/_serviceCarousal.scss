@@ -31,7 +31,9 @@
         cursor: pointer;
         }
         }
-
+        a{
+           color:#fff;
+        }
 
         .icon-document:hover [class*='line'] {
         @include prefix ( animation, bounceOutDown 750ms ease-in-out 1 ,  moz o ms webkit );

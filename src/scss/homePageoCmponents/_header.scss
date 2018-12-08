@@ -1,4 +1,3 @@
-
                 .headertop{
                 @include prefix ( animation, colorchange 50s ,  moz o ms webkit );
                 top:0;
@@ -40,24 +39,32 @@
                 100% {background: #290558; }
                 }
 
+                }
+
+
+
                 @media (min-width: 460px){
-                .headcont{
-                height: 70vh;
-                }
 
-                }
+                        .headcont{
+                        height: 70vh;
+                        }
+
+                        }
+
                 @media (max-width: 600px){
-                .headcont{
-                height: 15vh;
-                img{
-                width: 200px;
-                }
-                }
-                }
+                        .headertop{
+                        width: 92% !important;
+                        }
+                                .headcont{
+                                height: 15vh;
+                                        img{
+                                        width: 200px;
+                                        }
+                                        }
 
+                                        .overlay{
+                                                width: 92% !important;
+                                        }
 
-
-
-                }
-
+                                            }
 

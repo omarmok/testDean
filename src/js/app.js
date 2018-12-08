@@ -43,13 +43,13 @@ function closeNav() {
 
 
 
-            $('a').click(function(){
-                var aattr=$(this).attr('href');
-              if (aattr == '') {
-                  $(this).attr("href", "http://omarmokhtar.com/");
-              }
+    $('a').click(function(){
+        var aattr=$(this).attr('href');
+      if (aattr == '') {
+          $(this).attr("href", "https://www.mu.edu.sa/ar/%D8%B9%D9%85%D8%A7%D8%AF%D8%A9-%D8%AA%D9%82%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA/%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D8%AF%D8%A7%D8%AA");
+      }
 
-            });
+    });
 
 
 
