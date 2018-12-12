@@ -74,11 +74,23 @@
     .carousel-control-prev{
         top: -10% !important;
         left: 0px !important;
+        width: 27px !important;
+       height: 27px !important;
+       padding: 8px !important;
+
+
     }
 
     .carousel-control-next{
         top: -10% !important;
-        right: 75% !important;
+        right: 84% !important;
+        width: 27px !important;
+        height: 27px !important;
+        padding: 8px !important;
+    }
+
+    .carousel-item {
+        max-height: 590px;
     }
 
   }
