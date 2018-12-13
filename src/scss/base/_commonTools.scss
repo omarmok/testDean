@@ -93,3 +93,22 @@
             display: none !important;
           }
         }
+
+
+// check if it has [ title , alt , href ]
+
+
+      // a[alt=""],
+      // a:not([alt]){
+      //   border:1px solid red;
+      // }
+
+      // a[href=""],
+      // a:not([href]){
+      //   border:1px solid rgb(0, 217, 255);
+      // }
+
+      // img[title=""],
+      // img:not([title]){
+      //   border:1px solid green;
+      // }

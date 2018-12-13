@@ -11,7 +11,7 @@
         flex-direction: row;
         img{
             border: 5px solid #fff;
-            border-radius: 50%;
+
             width: 150px;
             height: 150px;
         }
@@ -21,7 +21,6 @@
             height: 30px;
             top: 11px;
             position: absolute;
-            border-radius: 50%;
             img{
                 width: 20px;
                 height: 20px;
@@ -47,9 +46,9 @@
         height: 40px;
         border-radius: 50%;
         padding: 11px;
-        top: 50%;
+        top: 20%;
         opacity: 1;
-        left: -100px;
+        left: -40px
     }
     .carousel-control-next{
         width: 40px;
@@ -57,7 +56,7 @@
         height: 40px;
         border-radius: 50%;
         padding: 11px;
-        top: 50%;
+        top: 20%;
         opacity: 1;
             right: -80px;
     }
@@ -66,31 +65,35 @@
 
 
 @media (max-width: 800px) {
+
+  #archive{
     .caroImg{
 
-        flex-direction:column !important;
+      flex-direction:column !important;
 
-    }
-    .carousel-control-prev{
-        top: -10% !important;
-        left: 0px !important;
-        width: 27px !important;
-       height: 27px !important;
-       padding: 8px !important;
+  }
+  .carousel-control-prev{
+      top: -10% !important;
+      left: 0px !important;
+      width: 27px !important;
+     height: 27px !important;
+     padding: 8px !important;
 
 
-    }
+  }
 
-    .carousel-control-next{
-        top: -10% !important;
-        right: 84% !important;
-        width: 27px !important;
-        height: 27px !important;
-        padding: 8px !important;
-    }
+  .carousel-control-next{
+      top: -10% !important;
+      right: 84% !important;
+      width: 27px !important;
+      height: 27px !important;
+      padding: 8px !important;
+  }
 
-    .carousel-item {
-        max-height: 590px;
-    }
+  .carousel-item {
+      max-height: 590px;
+  }
+  }
+
 
   }
